@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 
 function App() {
   const [books, setBooks] = useState([]);
+
+  const fetchBooks = async () => {
+    const response = await axios.get('http://localhost:3001/books');
+    setBooks(response.data);
+  }
 
   const editBookById = (id, newTitle) => {
     const updatedBooks = books.map(book => {
@@ -13,6 +19,10 @@ function App() {
     setBooks(updatedBooks);
   }
 
+  useEffect(() => {
+    fetchBooks();
+  }, [])
+
   const deleteBookById = function(bookID) {
     const updatedBooks = books.filter((book) => {
       return book.id !== bookID;
@@ -20,13 +30,15 @@ function App() {
     setBooks(updatedBooks);
   }
 
-  const createBook = (title) => {
+  const createBook = async (title) => {
+
+    const response = await axios.post('http://localhost:3001/books', { title });
+
+    console.log(response);
+
     const updatedBooks = [
       ...books,
-      { 
-        id: Math.round(Math.random() * 99999),
-        title 
-      },
+      response.data
     ];
     setBooks(updatedBooks);
   }

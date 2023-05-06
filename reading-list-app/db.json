@@ -1,15 +1,16 @@
 {
   "books": [
     {
-      "title": "Harry Potman",
+      "title": "harry potter",
       "id": 1
     },
     {
-      "title": "Harry Potman",
+      "title": "guardians of the galaxy",
       "id": 2
+    },
+    {
+      "title": "tango",
+      "id": 3
     }
-  ],
-  "idiots": [
-    "you are an idiot"
   ]
 }
