@@ -1,0 +1,15 @@
+{
+  "books": [
+    {
+      "title": "Harry Potman",
+      "id": 1
+    },
+    {
+      "title": "Harry Potman",
+      "id": 2
+    }
+  ],
+  "idiots": [
+    "you are an idiot"
+  ]
+}
