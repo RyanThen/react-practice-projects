@@ -1,15 +1,11 @@
 {
   "books": [
     {
-      "title": "harry potter",
+      "title": "harry potterman",
       "id": 1
     },
     {
-      "title": "guardians of the galaxy",
-      "id": 2
-    },
-    {
-      "title": "tango",
+      "title": "Mango Tango",
       "id": 3
     }
   ]
