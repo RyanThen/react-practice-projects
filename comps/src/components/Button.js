@@ -12,14 +12,20 @@ function Button({
  }) {
   return (
     <div className="btn-container">
-      <button>{children}</button>
+      <button className="px-3 py-1.5 border-blue-600 bg-blue-500 text-white outline">{children}</button>
     </div>
   )
 }
 
 Button.propTypes = {
-  checkVariationValue: (props) => {
-    return new Error('Invalid props');
+  checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+    const count = Number(!!primary)
+      + Number(!!secondary)
+      + Number(!!success)
+      + Number(!!warning)
+      + Number(!!danger);
+
+    if(count > 1) return new Error('only one of primary, secondary, success, warning or danger can be true');
   }
 }
 

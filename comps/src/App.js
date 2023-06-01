@@ -6,7 +6,7 @@ function App() {
       <p>App component</p>
       
       <div>
-        <Button>Test 1</Button>
+        <Button primary>Test 1</Button>
       </div>
 
       <div>
