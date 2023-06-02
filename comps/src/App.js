@@ -6,19 +6,23 @@ function App() {
       <p>App component</p>
       
       <div>
-        <Button primary>Test 1</Button>
+        <Button primary>Testing 1</Button>
       </div>
 
       <div>
-        <Button>Test 2</Button>
+        <Button secondary rounded>Testing 2</Button>
       </div>
 
       <div>
-        <Button>Test 3</Button>
+        <Button success>Testing 3</Button>
       </div>
 
       <div>
-        <Button>Test 4</Button>
+        <Button warning rounded>Testing 4</Button>
+      </div>
+
+      <div>
+        <Button danger>Testing 5</Button>
       </div>
 
     </div>
