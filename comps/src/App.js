@@ -14,11 +14,11 @@ function App() {
       </div>
 
       <div>
-        <Button success>Testing 3</Button>
+        <Button success outline>Testing 3</Button>
       </div>
 
       <div>
-        <Button warning rounded>Testing 4</Button>
+        <Button warning outline rounded>Testing 4</Button>
       </div>
 
       <div>
