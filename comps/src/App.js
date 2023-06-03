@@ -1,4 +1,9 @@
 import Button from './components/Button';
+import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
+
+const handleClick = () => {
+  console.log('button clicked!!')
+}
 
 function App() {
   return (
@@ -6,19 +11,28 @@ function App() {
       <p>App component</p>
       
       <div>
-        <Button primary>Testing 1</Button>
+        <Button onClick={handleClick} primary>
+          <GoBell />
+          Testing 1
+        </Button>
       </div>
 
       <div>
-        <Button secondary rounded>Testing 2</Button>
+        <Button secondary rounded>
+          <GoCloudDownload />
+          Testing 2
+        </Button>
       </div>
 
       <div>
-        <Button success outline>Testing 3</Button>
+        <Button success>
+          <GoDatabase />
+          Testing 3
+        </Button>
       </div>
 
       <div>
-        <Button warning outline rounded>Testing 4</Button>
+        <Button warning rounded>Testing 4</Button>
       </div>
 
       <div>
