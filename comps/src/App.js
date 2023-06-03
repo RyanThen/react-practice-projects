@@ -1,17 +1,14 @@
 import Button from './components/Button';
 import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 
-const handleClick = () => {
-  console.log('button clicked!!')
-}
-
 function App() {
   return (
     <div className="App">
-      <p>App component</p>
-      
+
+      <br />
+
       <div>
-        <Button onClick={handleClick} primary>
+        <Button className='mb-4' primary>
           <GoBell />
           Testing 1
         </Button>
